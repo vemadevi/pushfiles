@@ -1459,3 +1459,23 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.apache.xm
 2022-10-16 16:43:39,947 [Worker-16: Launching Javademo] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2022-10-16 16:43:39,951 [Worker-16: Launching Javademo] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 2022-10-16 16:43:39,953 [Worker-16: Launching Javademo] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-10-17 10:42:39,610 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is not available. Remote download required.
+2022-10-17 10:43:31,650 [Worker-8: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-17 10:43:31,660 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-10-17 10:43:31,669 [Worker-8: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-17 10:43:31,671 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-10-17 10:47:04,076 [Worker-0: Launching ChromeDemo2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-17 10:47:04,080 [Worker-0: Launching ChromeDemo2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-10-17 10:47:04,085 [Worker-0: Launching ChromeDemo2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-17 10:47:04,090 [Worker-0: Launching ChromeDemo2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-10-17 10:48:36,672 [Worker-7: Launching ChromeDemo2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-17 10:48:36,674 [Worker-7: Launching ChromeDemo2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-10-17 10:48:36,678 [Worker-7: Launching ChromeDemo2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-17 10:48:36,680 [Worker-7: Launching ChromeDemo2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-10-17 10:48:57,699 [Worker-2: Launching ChromeDemo2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-17 10:48:57,700 [Worker-2: Launching ChromeDemo2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-10-17 10:48:57,703 [Worker-2: Launching ChromeDemo2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-17 10:48:57,706 [Worker-2: Launching ChromeDemo2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-10-17 10:49:22,145 [Worker-10: Launching ChromeDemo2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-17 10:49:22,147 [Worker-10: Launching ChromeDemo2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-10-17 10:49:22,150 [Worker-10: Launching ChromeDemo2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
