@@ -49,7 +49,7 @@ public static void login_letcodeApplication(String username,String password ) th
 public static void teardown() throws InterruptedException, IOException {
 	Thread.sleep(5000);
 	driver.close();
-	takeScreenImage("closepage");
+
 }
 
 public static void main(String[] args) throws IOException, InterruptedException {
