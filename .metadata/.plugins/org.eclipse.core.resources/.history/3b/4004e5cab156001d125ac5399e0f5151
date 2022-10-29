@@ -1,0 +1,30 @@
+package com.automationtesting.testngconcpt;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class NinjaTest {
+	public void NinjaLogin() {
+		WebDriverManager.chromedriver().setup();
+		WebDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().deleteAllCookies();
+		driver.manage().timeouts().implicitlyWait(12, TimeUnit.SECONDS);
+		driver.get("http://www.tutorialsninja.com/demo/");
+		driver.findElement(By.xpath("//span[text()='My Account']")).click();
+		driver.findElement(By.xpath("//li/a[text()='Login']")).click();
+		driver.findElement(By.id("input-email")).sendKeys("testingtraining@gmail.com");
+		driver.findElement(By.id("input-password")).sendKeys("G@cloud2022");
+		driver.findElement(By.cssSelector("input[class*=btn]")).click();
+		String exp_url="http://tutorialsninja.com/demo/index.php?route=account/login";
+		String act_url=driver.getCurrentUrl();
+		Assert.assertEquals(exp_url, act_url);
+	}
+
+}

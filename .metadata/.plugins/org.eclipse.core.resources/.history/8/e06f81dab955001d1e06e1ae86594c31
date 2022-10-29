@@ -1,0 +1,40 @@
+package com.automationtesting.testngconcpt;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class OrangeHrmDataprovider {
+	WebDriver driver;
+	
+	public Object[][] getUserData() {
+		Object[][]data=new Object[3][2];
+		data[0][0]="Admin";
+		data[0][1]="admin123";
+		
+		data[1][0]="admin";
+		data[1][1]="@123";
+		
+		data[2][0]="Admin";
+		data[2][1]="admin123";
+		
+		return data;	
+	}
+	public void setup() {
+		WebDriverManager.chromedriver().setup();
+		driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.manage().deleteAllCookies();
+}
+	public void url() {
+		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+	}
+	
+	
+	
+}
+

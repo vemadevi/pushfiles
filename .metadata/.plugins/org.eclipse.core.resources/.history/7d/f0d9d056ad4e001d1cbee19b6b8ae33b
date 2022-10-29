@@ -1,7 +1,0 @@
-package com.automationtesting.jsedemo;
-
-public class OrangeHrmLogin {
-	tatic webdriver driver;
-	
-
-}

@@ -1,0 +1,13 @@
+package com.automationtesting.javademo;
+
+public class Child extends Parent {
+	public void properties() {
+		System.out.println("villa in jublihills");
+	}
+public static void main(String[] args) {
+	Child c=new Child();
+	c.assests();
+	c.land();
+	c.properties();
+}
+}

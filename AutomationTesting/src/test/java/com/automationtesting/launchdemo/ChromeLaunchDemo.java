@@ -10,6 +10,7 @@ public class Chromelaunchdemo {
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
+		
 		driver.close();
 	}
 
