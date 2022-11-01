@@ -1,33 +1,146 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-29T08:43:20 IST" name="Default suite" finished-at="2022-10-29T08:43:40 IST" duration-ms="19952">
+  <suite started-at="2022-11-01T12:39:47 IST" name="Default suite" finished-at="2022-11-01T12:41:44 IST" duration-ms="117304">
     <groups>
     </groups>
-    <test started-at="2022-10-29T08:43:20 IST" name="Default test" finished-at="2022-10-29T08:43:40 IST" duration-ms="19952">
-      <class name="com.automationtesting.testngconcpt.OrangeHrmLogin">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.automationtesting.testngconcpt.OrangeHrmLogin@399f45b1]" started-at="2022-10-29T08:43:20 IST" name="setup" finished-at="2022-10-29T08:43:25 IST" duration-ms="4505" status="PASS">
+    <test started-at="2022-11-01T12:39:47 IST" name="Default test" finished-at="2022-11-01T12:41:44 IST" duration-ms="117304">
+      <class name="com.automationtesting.inheritance.TestScript">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.automationtesting.inheritance.TestScript@49ec71f8]" started-at="2022-11-01T12:39:47 IST" name="setup" finished-at="2022-11-01T12:39:55 IST" duration-ms="7952" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="url()[pri:0, instance:com.automationtesting.testngconcpt.OrangeHrmLogin@399f45b1]" started-at="2022-10-29T08:43:25 IST" name="url" finished-at="2022-10-29T08:43:30 IST" duration-ms="5671" status="PASS">
+        <test-method signature="OrangeHrmLogin(java.lang.String,java.lang.String)[pri:0, instance:com.automationtesting.inheritance.TestScript@49ec71f8]" started-at="2022-11-01T12:39:55 IST" name="OrangeHrmLogin" data-provider="logindata" finished-at="2022-11-01T12:40:35 IST" duration-ms="39901" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- url -->
-        <test-method signature="login()[pri:0, instance:com.automationtesting.testngconcpt.OrangeHrmLogin@399f45b1]" started-at="2022-10-29T08:43:30 IST" name="login" finished-at="2022-10-29T08:43:39 IST" duration-ms="8233" status="PASS">
+        </test-method> <!-- OrangeHrmLogin -->
+        <test-method is-config="true" signature="afterTest(org.testng.ITestResult)[pri:0, instance:com.automationtesting.inheritance.TestScript@49ec71f8]" started-at="2022-11-01T12:40:35 IST" name="afterTest" finished-at="2022-11-01T12:40:35 IST" duration-ms="7" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=OrangeHrmLogin status=SUCCESS method=TestScript.OrangeHrmLogin(java.lang.String,java.lang.String)[pri:0, instance:com.automationtesting.inheritance.TestScript@49ec71f8] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="logout()[pri:0, instance:com.automationtesting.testngconcpt.OrangeHrmLogin@399f45b1]" started-at="2022-10-29T08:43:39 IST" name="logout" finished-at="2022-10-29T08:43:40 IST" duration-ms="1316" status="PASS">
+        </test-method> <!-- afterTest -->
+        <test-method signature="OrangeHrmLogin(java.lang.String,java.lang.String)[pri:0, instance:com.automationtesting.inheritance.TestScript@49ec71f8]" started-at="2022-11-01T12:40:35 IST" name="OrangeHrmLogin" data-provider="logindata" finished-at="2022-11-01T12:40:57 IST" duration-ms="21915" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin@123]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='Employee List']"}
+  (Session info: chrome=106.0.5249.119)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
+System info: host: 'DESKTOP-4V5TV33', ip: '192.168.43.80', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51444}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 020b0dbea5f848cb31368a537b140ede
+*** Element info: {Using=xpath, value=//a[text()='Employee List']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='Employee List']"}
+  (Session info: chrome=106.0.5249.119)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
+System info: host: 'DESKTOP-4V5TV33', ip: '192.168.43.80', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51444}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 020b0dbea5f848cb31368a537b140ede
+*** Element info: {Using=xpath, value=//a[text()='Employee List']}
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+at com.automationtesting.inheritance.TestScript.OrangeHrmLogin(TestScript.java:17)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.automationtesting.testngconcpt.OrangeHrmLogin@399f45b1]" started-at="2022-10-29T08:43:40 IST" name="teardown" finished-at="2022-10-29T08:43:40 IST" duration-ms="126" status="PASS">
+        </test-method> <!-- OrangeHrmLogin -->
+        <test-method is-config="true" signature="afterTest(org.testng.ITestResult)[pri:0, instance:com.automationtesting.inheritance.TestScript@49ec71f8]" started-at="2022-11-01T12:40:57 IST" name="afterTest" finished-at="2022-11-01T12:40:57 IST" duration-ms="506" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=OrangeHrmLogin status=FAILURE method=TestScript.OrangeHrmLogin(java.lang.String,java.lang.String)[pri:0, instance:com.automationtesting.inheritance.TestScript@49ec71f8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.automationtesting.inheritance.TestScript@49ec71f8]" started-at="2022-11-01T12:41:43 IST" name="teardown" finished-at="2022-11-01T12:41:44 IST" duration-ms="515" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.automationtesting.testngconcpt.OrangeHrmLogin -->
+      </class> <!-- com.automationtesting.inheritance.TestScript -->
+      <class name="com.automationtesting.inheritance.TestScript$NinjaTest">
+        <test-method signature="NinjaLogin()[pri:2, instance:com.automationtesting.inheritance.TestScript$NinjaTest@131774fe]" started-at="2022-11-01T12:40:57 IST" name="NinjaLogin" finished-at="2022-11-01T12:41:43 IST" duration-ms="46339" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NinjaLogin -->
+      </class> <!-- com.automationtesting.inheritance.TestScript$NinjaTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -1,0 +1,5 @@
+package com.automationtesting.inheritance;
+
+public class Base {
+
+}

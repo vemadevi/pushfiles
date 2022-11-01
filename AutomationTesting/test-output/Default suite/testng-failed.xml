@@ -3,11 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.automationtesting.testngconcpt.NinjaTest">
+      <class name="com.automationtesting.inheritance.TestScript">
         <methods>
-          <include name="NinjaLogin"/>
+          <include name="afterTest"/>
+          <include name="teardown"/>
+          <include name="setup"/>
+          <include name="OrangeHrmLogin" invocation-numbers="1"/>
         </methods>
-      </class> <!-- com.automationtesting.testngconcpt.NinjaTest -->
+      </class> <!-- com.automationtesting.inheritance.TestScript -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

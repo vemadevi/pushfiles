@@ -1,0 +1,39 @@
+package com.automationtesting.inheritance;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class TestScript extends Base{
+	@Test
+	public void OrangeHrmLogin() {
+		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+		driver.findElement(By.name("username")).sendKeys("Admin");
+		driver.findElement(By.name("password")).sendKeys("admin123");
+		driver.findElement(By.cssSelector("button[class*=oxd]")).click();
+		Assert.assertTrue(driver.findElement(By.xpath("//a[text()='Employee List']")).isDisplayed());
+		driver.findElement(By.xpath("//img[@alt='profile picture']")).click();
+		driver.findElement(By.xpath("//a[text()='Logout']")).click();
+	}
+	@Test
+	
+	public class NinjaTest {
+		public void NinjaLogin() {
+			driver.get("http://www.tutorialsninja.com/demo/");
+			driver.findElement(By.xpath("//span[text()='My Account']")).click();
+			driver.findElement(By.xpath("//li/a[text()='Login']")).click();
+			driver.findElement(By.id("input-email")).sendKeys("testingtraining@gmail.com");
+			driver.findElement(By.id("input-password")).sendKeys("G@cloud2022");
+			driver.findElement(By.cssSelector("input[class*=btn]")).click();
+			String exp_url="http://tutorialsninja.com/demo/index.php?route=account/account";
+			String act_url=driver.getCurrentUrl();
+			Assert.assertEquals(exp_url, act_url);
+		}
+	}
+}
